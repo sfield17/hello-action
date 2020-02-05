@@ -1,0 +1,14 @@
+name: tester
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Test with pytest
+      run: |
+        pip install pytest
+        pytest
